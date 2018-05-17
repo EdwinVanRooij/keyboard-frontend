@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 // import './foundation.min.css';
 import './app.css';
 
-const style = {
-    textAlign: 'center',
-};
-
 class App extends Component {
     constructor(props) {
         super(props);
