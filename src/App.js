@@ -21,20 +21,19 @@ class App extends Component {
 
     render() {
         return (
-            <div>
                 <div className="keyboard">
                     <div className="KeyboardRow">
                         <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "`")} onMouseOver={this.handleHover.bind(this, "`")}>`</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "1")} onMouseOver={this.handleHover.bind(this, "1")}>1</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "2")} onMouseOver={this.handleHover.bind(this, "2")}>2</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "3")} onMouseOver={this.handleHover.bind(this, "3")}>3</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "4")} onMouseOver={this.handleHover.bind(this, "4")}>4</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "5")} onMouseOver={this.handleHover.bind(this, "5")}>5</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "6")} onMouseOver={this.handleHover.bind(this, "6")}>6</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "7")} onMouseOver={this.handleHover.bind(this, "7")}>7</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "8")} onMouseOver={this.handleHover.bind(this, "8")}>8</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "9")} onMouseOver={this.handleHover.bind(this, "9")}>9</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "0")} onMouseOver={this.handleHover.bind(this, "0")}>0</span>
+                        <span className="Number KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "1")} onMouseOver={this.handleHover.bind(this, "1")}>1</span>
+                        <span className="Number KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "2")} onMouseOver={this.handleHover.bind(this, "2")}>2</span>
+                        <span className="Number KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "3")} onMouseOver={this.handleHover.bind(this, "3")}>3</span>
+                        <span className="Number KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "4")} onMouseOver={this.handleHover.bind(this, "4")}>4</span>
+                        <span className="Number KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "5")} onMouseOver={this.handleHover.bind(this, "5")}>5</span>
+                        <span className="Number KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "6")} onMouseOver={this.handleHover.bind(this, "6")}>6</span>
+                        <span className="Number KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "7")} onMouseOver={this.handleHover.bind(this, "7")}>7</span>
+                        <span className="Number KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "8")} onMouseOver={this.handleHover.bind(this, "8")}>8</span>
+                        <span className="Number KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "9")} onMouseOver={this.handleHover.bind(this, "9")}>9</span>
+                        <span className="Number KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "0")} onMouseOver={this.handleHover.bind(this, "0")}>0</span>
                         <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "[")} onMouseOver={this.handleHover.bind(this, "[")}>[</span>
                         <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "]")} onMouseOver={this.handleHover.bind(this, "]")}>]</span>
                         <span className="KeyboardKey MediumSized" onClick={this.handleClick.bind(this, "Backspace")} onMouseOver={this.handleHover.bind(this, "Backspace")}>Backspace</span>
@@ -57,16 +56,16 @@ class App extends Component {
                     </div>
                     <div className="KeyboardRow">
                         <span className="KeyboardKey LargeSized" onClick={this.handleClick.bind(this, "CapsLock")} onMouseOver={this.handleHover.bind(this, "CapsLock")}>CapsLock</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "A")} onMouseOver={this.handleHover.bind(this, "A")}>A</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "O")} onMouseOver={this.handleHover.bind(this, "O")}>O</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "E")} onMouseOver={this.handleHover.bind(this, "E")}>E</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "U")} onMouseOver={this.handleHover.bind(this, "U")}>U</span>
+                        <span className="KeyboardKey SmallSized HomeRowKey" onClick={this.handleClick.bind(this, "A")} onMouseOver={this.handleHover.bind(this, "A")}>A</span>
+                        <span className="KeyboardKey SmallSized HomeRowKey" onClick={this.handleClick.bind(this, "O")} onMouseOver={this.handleHover.bind(this, "O")}>O</span>
+                        <span className="KeyboardKey SmallSized HomeRowKey" onClick={this.handleClick.bind(this, "E")} onMouseOver={this.handleHover.bind(this, "E")}>E</span>
+                        <span className="KeyboardKey SmallSized HomeRowKey" onClick={this.handleClick.bind(this, "U")} onMouseOver={this.handleHover.bind(this, "U")}>U</span>
                         <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "I")} onMouseOver={this.handleHover.bind(this, "I")}>I</span>
                         <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "D")} onMouseOver={this.handleHover.bind(this, "D")}>D</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "H")} onMouseOver={this.handleHover.bind(this, "H")}>H</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "T")} onMouseOver={this.handleHover.bind(this, "T")}>T</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "N")} onMouseOver={this.handleHover.bind(this, "N")}>N</span>
-                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "S")} onMouseOver={this.handleHover.bind(this, "S")}>S</span>
+                        <span className="KeyboardKey SmallSized HomeRowKey" onClick={this.handleClick.bind(this, "H")} onMouseOver={this.handleHover.bind(this, "H")}>H</span>
+                        <span className="KeyboardKey SmallSized HomeRowKey" onClick={this.handleClick.bind(this, "T")} onMouseOver={this.handleHover.bind(this, "T")}>T</span>
+                        <span className="KeyboardKey SmallSized HomeRowKey" onClick={this.handleClick.bind(this, "N")} onMouseOver={this.handleHover.bind(this, "N")}>N</span>
+                        <span className="HomeRowKey KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "S")} onMouseOver={this.handleHover.bind(this, "S")}>S</span>
                         <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "-")} onMouseOver={this.handleHover.bind(this, "-")}>-</span>
                         <span className="KeyboardKey LargeSized" onClick={this.handleClick.bind(this, "Enter")} onMouseOver={this.handleHover.bind(this, "Enter")}>Enter</span>
                     </div>
@@ -84,11 +83,20 @@ class App extends Component {
                         <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "Z")} onMouseOver={this.handleHover.bind(this, "Z")}>Z</span>
                         <span className="KeyboardKey ExtraLargeSized" onClick={this.handleClick.bind(this, "Shift")} onMouseOver={this.handleHover.bind(this, "Shift")}>Shift</span>
                     </div>
-                    <div className="KeyboardKey message">
+                    <div className="KeyboardRow">
+                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "Fn")} onMouseOver={this.handleHover.bind(this, "Fn")}>Fn</span>
+                        <span className="KeyboardKey SlightlyMediumSized" onClick={this.handleClick.bind(this, "Ctrl")} onMouseOver={this.handleHover.bind(this, "Ctrl")}>Ctrl</span>
+                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "Win")} onMouseOver={this.handleHover.bind(this, "Win")}>Win</span>
+                        <span className="KeyboardKey SmallSized" onClick={this.handleClick.bind(this, "Alt")} onMouseOver={this.handleHover.bind(this, "Alt")}>Alt</span>
+                        <span className="KeyboardKey SuperSized" onClick={this.handleClick.bind(this, "Space")} onMouseOver={this.handleHover.bind(this, "Space")}>Space</span>
+                        <span className="KeyboardKey ExtraSmallSized" onClick={this.handleClick.bind(this, "AltGr")} onMouseOver={this.handleHover.bind(this, "AltGr")}>AltGr</span>
+                        <span className="KeyboardKey ExtraSmallSized" onClick={this.handleClick.bind(this, "PrtSc")} onMouseOver={this.handleHover.bind(this, "PrtSc")}>PrtSc</span>
+                        <span className="KeyboardKey ExtraSmallSized" onClick={this.handleClick.bind(this, "Ctrl")} onMouseOver={this.handleHover.bind(this, "Ctrl")}>Ctrl</span>
+                    </div>
+                    <div className="message">
                         {this.state.message}
                     </div>
                 </div>
-            </div>
         );
     }
 }

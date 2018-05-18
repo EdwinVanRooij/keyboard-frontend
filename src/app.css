@@ -2,8 +2,12 @@ body {
     font-family: arial, Helvetica, sans-serif;
 }
 
+.keyboard {
+    margin: 1%;
+}
+
 .KeyboardRow {
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .KeyboardKey {
@@ -24,7 +28,7 @@ body {
     display: inline-block;
     color: #777777;
     font-family: arial;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     font-style: normal;
     height: 50px;
@@ -52,7 +56,28 @@ body {
     top: 1px;
 }
 
+.HomeRowKey {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(12, 87, 168, 0.2)), color-stop(1, rgba(4, 48, 120, 0.2)));
+    background: -moz-linear-gradient(center top, #0c57a8 5%, #043078 100%);
+}
+
+.Number {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(12, 87, 168, 0.15)), color-stop(1, rgba(4, 48, 120, 0.15)));
+    background: -moz-linear-gradient(center top, #0c57a8 5%, #043078 100%);
+}
+
+.ExtraSmallSized {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .SmallSized {
+
+}
+
+.SlightlyMediumSized {
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .MediumSized {
@@ -70,10 +95,25 @@ body {
     padding-right: 111px;
 }
 
-.message {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
+.SuperSized {
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
+.message {
+    color: #ffffff;
 
+    background-color: #0c57a8;
+    -moz-box-shadow: inset 0px 1px 0px 0px #9fc5f2;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #9fc5f2;
+    box-shadow: inset 0px 1px 0px 0px #9fc5f2;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0c57a8), color-stop(1, #043078));
+    background: -moz-linear-gradient(center top, #0c57a8 5%, #043078 100%);
+    margin: 150px;
+    margin-left: 750px;
+    margin-right: 750px;
+    border: 1px solid #dcdcdc;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
