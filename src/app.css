@@ -7,9 +7,9 @@ body {
 }
 
 .KeyboardKey {
+    padding: 25px;
     display: inline-block;
     border: 1px solid #dcdcdc;
-    padding: 25px;
     margin: 5px;
     -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
     -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -51,4 +51,29 @@ body {
     position: relative;
     top: 1px;
 }
+
+.SmallSized {
+}
+
+.MediumSized {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.LargeSized {
+    padding-left: 77px;
+    padding-right: 77px;
+}
+
+.ExtraLargeSized {
+    padding-left: 111px;
+    padding-right: 111px;
+}
+
+.message {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
 
