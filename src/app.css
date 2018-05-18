@@ -1,20 +1,25 @@
-body {
-    font-family: arial, Helvetica, sans-serif;
-}
-
 .keyboard {
-    margin: 1%;
+    padding-top: 5%;
 }
 
 .KeyboardRow {
-    /*text-align: center;*/
+    text-align: center;
+}
+
+.TitleBackground {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.Title {
+    color: rgba(10, 10, 10, 0.7);
+    /*background-color: transparent;*/
 }
 
 .KeyboardKey {
-    padding: 25px;
+    /*padding: 25px;*/
     display: inline-block;
     border: 1px solid #dcdcdc;
-    margin: 5px;
+    margin: 0.2rem;
     -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
     -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
     box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -33,7 +38,7 @@ body {
     font-style: normal;
     height: 50px;
     line-height: 50px;
-    width: 75px;
+    min-width: 75px;
     text-decoration: none;
     text-align: center;
     text-shadow: 1px 1px 0px #ffffff;
@@ -44,8 +49,10 @@ body {
     -moz-box-shadow: inset 0px 1px 0px 0px #9fc5f2;
     -webkit-box-shadow: inset 0px 1px 0px 0px #9fc5f2;
     box-shadow: inset 0px 1px 0px 0px #9fc5f2;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0c57a8), color-stop(1, #043078));
-    background: -moz-linear-gradient(center top, #0c57a8 5%, #043078 100%);
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgb(12, 87, 168)), color-stop(1, rgb(4, 48, 120)));
+    background: -moz-linear-gradient(center top, rgb(12, 87, 168) 5%, rgb(4, 48, 120) 100%);
+
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c57a8', endColorstr='#043078');
     border: 1px solid #2358a1;
     display: inline-block;
@@ -57,52 +64,78 @@ body {
 }
 
 .HomeRowKey {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(12, 87, 168, 0.2)), color-stop(1, rgba(4, 48, 120, 0.2)));
-    background: -moz-linear-gradient(center top, #0c57a8 5%, #043078 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(217, 217, 217, 0.9)), color-stop(1, rgba(203, 203, 203, 0.9)));
+    background: -moz-linear-gradient(center top, rgba(217, 217, 217, 0.7) 5%, rgba(203, 203, 203, 0.7) 100%);
 }
 
 .Number {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(12, 87, 168, 0.15)), color-stop(1, rgba(4, 48, 120, 0.15)));
-    background: -moz-linear-gradient(center top, #0c57a8 5%, #043078 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(217, 217, 217, 0.9)), color-stop(1, rgba(203, 203, 203, 0.9)));
+    background: -moz-linear-gradient(center top, rgba(217, 217, 217, 0.7) 5%, rgba(203, 203, 203, 0.7) 100%);
 }
 
 .ExtraSmallSized {
-    padding-left: 10px;
-    padding-right: 10px;
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
 }
 
-.SmallSized {
+.Normal {
 
 }
 
 .SlightlyMediumSized {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /*padding-left: 45px;*/
+    /*padding-right: 45px;*/
 }
 
-.MediumSized {
-    padding-left: 60px;
-    padding-right: 60px;
+.AltGr .PrtSc .RightCtrl {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
-.LargeSized {
-    padding-left: 77px;
-    padding-right: 77px;
+.BackSpace {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
 }
 
-.ExtraLargeSized {
-    padding-left: 111px;
-    padding-right: 111px;
+.Tab {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
-.SuperSized {
-    padding-left: 300px;
-    padding-right: 300px;
+.CapsLock {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.Shift {
+    padding-left: 4.1rem;
+    padding-right: 4.1rem;
+}
+
+.LeftCtrl {
+    padding-left: 1.65rem;
+    padding-right: 1.65rem;
+}
+
+.Space {
+    padding-left: 10.7rem;
+    padding-right: 10.7rem;
+}
+
+.Enter {
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+}
+
+.Filler {
+    padding-left: 5.4rem;
+    padding-right: 5.4rem;
 }
 
 .message {
     color: #ffffff;
-
     background-color: #0c57a8;
     -moz-box-shadow: inset 0px 1px 0px 0px #9fc5f2;
     -webkit-box-shadow: inset 0px 1px 0px 0px #9fc5f2;
@@ -117,3 +150,6 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
+
+
