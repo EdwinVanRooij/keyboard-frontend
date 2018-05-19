@@ -2,22 +2,13 @@ import React, {Component} from 'react';
 import './foundation.min.css';
 import './app.css';
 import './sections.css';
-
-
-const row_item_style = {
-    backgroundColor: "rgba(255, 255, 255, 0.7)",
-    maxWidth: "30rem",
-    marginRight: "auto",
-    marginLeft: "auto",
-    marginTop: "2rem",
-    textAlign: "center",
-};
+import ShortcutInfo from "./ShortcutInfo";
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.handleHover = this.handleHover.bind(this);
-        this.state = {message: ""}
+        this.state = {mapping: ""}
     }
 
     handleHover(key) {
@@ -28,7 +19,7 @@ class App extends Component {
 
     handleClick(key) {
         console.log("Clicked '" + key + "'");
-        this.setState({message: "Information about key '" + key + "'"});
+        // this.setState({message: "Information about key '" + key + "'"});
     }
 
     getMapping(key) {
@@ -42,7 +33,7 @@ class App extends Component {
                         console.log(json);
                         if (json) {
                             // console.log(json.description);
-                            this.setState({message: json.description});
+                            this.setState({mapping: json});
                         }
                     });
                 } else {
@@ -221,9 +212,7 @@ class App extends Component {
                 {this.renderMiddleRow()}
                 {this.renderBottomRow()}
                 {this.renderControlsRow()}
-                <div style={row_item_style} className="callout">
-                    {this.state.message}
-                </div>
+                <ShortcutInfo mapping={this.state.mapping}/>
             </div>
         )
     }
