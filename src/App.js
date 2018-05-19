@@ -22,12 +22,33 @@ class App extends Component {
 
     handleHover(key) {
         console.log("Mouse hover over '" + key + "'");
-        this.setState({message: "Information about key '" + key + "'"});
+        // this.setState({message: "Information about key '" + key + "'"});
+        this.getMapping(key);
     }
 
     handleClick(key) {
         console.log("Clicked '" + key + "'");
         this.setState({message: "Information about key '" + key + "'"});
+    }
+
+    getMapping(key) {
+        const url = 'http://localhost:4567/getI3Mapping?key=' + key;
+        console.log('url; ' + url);
+        fetch(url)
+            .then(response => {
+                if (response.ok) {
+                    const jsonResponse = response.json();
+                    jsonResponse.then(json => {
+                        console.log(json);
+                        if (json) {
+                            // console.log(json.description);
+                            this.setState({message: json.description});
+                        }
+                    });
+                } else {
+                    alert("HTTP request failed.");
+                }
+            })
     }
 
     renderNumberRow() {
