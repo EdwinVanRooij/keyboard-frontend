@@ -53,7 +53,7 @@ class ShortcutInfo extends Component {
                 {this.formatModifier(this.state.mapping.modifierKey)}
                 {this.formatEnhancements(this.state.mapping.enhancements)}
                 Primary key: {this.state.mapping.character} <br/>
-                Description: {this.state.mapping.description} <br/>
+                Description: {this.state.mapping.action} <br/>
             </div>
         )
     }
